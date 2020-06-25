@@ -56,16 +56,4 @@
             </plugin>
         </plugins>
     </build>
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <properties>
-                <project>
-                    <atlas.username>${atlas.username}</atlas.username>
-                    <atlas.password>${atlas.password}</atlas.password>
-                </project>
-            </properties>
-        </profile>
-    </profiles>
-
 </project>
