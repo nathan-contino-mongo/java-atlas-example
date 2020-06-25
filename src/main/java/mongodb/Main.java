@@ -25,7 +25,7 @@ public class Main {
     MongoCollection<Document> collection = database.getCollection("drivers");
 
     // insert multiple documents
-    List<Document> movieList = Arrays.asList(
+    List<Document> driversList = Arrays.asList(
             new Document().append("language", "C").append("name", "MongoDB C Driver"),
             new Document().append("language", "C++").append("name", "MongoDB C++ Driver"),
             new Document().append("language", "C#").append("name", "MongoDB C#/.NET Driver"),
@@ -43,7 +43,7 @@ public class Main {
             new Document().append("language", "Swift").append("name", "MongoDB Swift Driver"));
 
     try {
-      InsertManyResult result = collection.insertMany(movieList);
+      InsertManyResult result = collection.insertMany(driversList);
       System.out.println("Inserted document ids: " + result.getInsertedIds());
     } catch (MongoException me) {
       System.err.println("Unable to insert any driver documents due to an error: " + me);
