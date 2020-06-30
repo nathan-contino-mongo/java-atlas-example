@@ -66,7 +66,7 @@ this project as a ZIP archive,
 Congratulations! You have just connected to MongoDB Atlas using the Java MongoDB Driver!
 Try modifying the code to experiment with the Driver and MongoDB!
 
-# Debugging
+## Debugging
 
 Are you having trouble getting connected to your MongoDB Atlas instance? Double-check the following:
 
@@ -76,7 +76,7 @@ Are you having trouble getting connected to your MongoDB Atlas instance? Double-
 
 3. Do you have a [working installation of Java](https://stackoverflow.com/questions/18888220/how-to-check-whether-java-is-installed-on-the-computer)?
 
-# Notes
+## Notes
 
 If you prefer to install your tools independently,
 see the list of the individual requirements below:
