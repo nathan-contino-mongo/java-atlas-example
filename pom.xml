@@ -14,20 +14,25 @@
     </properties>
 
     <dependencies>
+        <!-- Java MongoDB Driver dependency -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-sync</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <!-- log4j logging dependency, required for logging output from the MongoDB Java Driver -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
             <version>2.9.0</version>
         </dependency>
+
+        <!-- logback logging dependency, required for logging output from the Mongodb Java Driver -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongodb-driver-sync</artifactId>
-            <version>4.0.1</version>
         </dependency>
     </dependencies>
 

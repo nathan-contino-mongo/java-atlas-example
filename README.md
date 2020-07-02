@@ -1,14 +1,18 @@
 # MongoDB Atlas Java Sample Project
 
-This repository contains an example application built
-with the Java MongoDB Driver. You can use this example
-application as a starting point for a Java application
-that connects to MongoDB Atlas.
+This repository contains an example application that connects
+to a MongoDB instance using the Java MongoDB Driver. You can
+use this example application as a starting point for a Java
+application that connects to MongoDB Atlas.
 
 ## Prerequisites
 
-To build and run this project, install
-[IntelliJ IDEA](https://www.jetbrains.com/idea/).
+To build and run this project, you will need IntelliJ IDEA Community
+Edition for MacOS, Windows, or Linux. You can download it 
+[here](https://www.jetbrains.com/idea/).
+
+It is also helpful, but not necessary, to have a working installation of
+[Git](https://git-scm.com/downloads) version control.
 
 ## Getting Started
 
@@ -19,8 +23,15 @@ connected to your instance of MongoDB Atlas.
 
 To get started with this sample project, download this repository to your
 programming environment. You can either download this project using Git
-version control or download a ZIP archive using your browser. If you download
-this project as a ZIP archive,
+version control:
+
+```bash
+git clone git@github.com:mongodb-university/atlas_starter_java.git
+```
+
+Or you can download a ZIP archive using your browser
+[from GitHub](https://github.com/mongodb-university/atlas_starter_dotnet/archive/master.zip).
+If you download this project as a ZIP archive,
 [unzip the archive](https://www.wikihow.com/Unzip-a-File) before proceeding.
 
 ### 2. Open the Project
@@ -52,9 +63,12 @@ this project as a ZIP archive,
 3. On the following lines in `Main`, replace the Atlas connection URI with your own from the Atlas UI.
 
 ```java
-
-    // TODO: replace username, password and cluster-url with your own configuration data!
-    String uri = "mongodb+srv://<username>:<password>@<cluster-url>?retryWrites=true&w=majority";
+    // TODO:
+    // Replace the placeholder connection string below with your
+    // Altas cluster specifics. Be sure it includes
+    // a valid username and password! Note that in a production environment,
+    // you do not want to store your password in plain-text here.
+    String mongoUri = "<Your Atlas Connection String>";
 ```
 
 ### 5. Run the Project
@@ -66,11 +80,11 @@ this project as a ZIP archive,
 Congratulations! You have just connected to MongoDB Atlas using the Java MongoDB Driver!
 Try modifying the code to experiment with the Driver and MongoDB!
 
-## Debugging
+## Troubleshooting
 
 Are you having trouble getting connected to your MongoDB Atlas instance? Double-check the following:
 
-1. Have you replaced the `uri` with a valid connection string provided by the Atlas UI?
+1. Have you replaced the `mongoUri` variable with a valid connection string provided by the Atlas UI?
 
 2. Have you [whitelisted your current IP address](https://docs.atlas.mongodb.com/security-whitelist/) in the Atlas UI?
 
@@ -80,12 +94,14 @@ Are you having trouble getting connected to your MongoDB Atlas instance? Double-
 
 If you prefer to install your tools independently,
 see the list of the individual requirements below:
-
+    // TODO:
+    // Replace the placeholder connection string below with your
+    // Altas cluster specifics. Be sure it includes
+    // a valid username and password! Note that in a production environment,
+    // you do not want to store your password in plain-text here.
+    String mongoUri = "<Your Atlas Connection String>";
 ### Required:
 1) A working installation of the [Java 8 JDK](https://developers.redhat.com/products/openjdk/download).
 2) A working installation of the [Maven](https://maven.apache.org/) build system.
-
-### Recommended:
-3) A working installation of [Git](https://git-scm.com/downloads) version control.
 
 Some of these tools may come pre-installed in your programming environment.
